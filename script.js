@@ -11,13 +11,16 @@ let resetButton;
 
 const checkGuess = () => {
     const userGuess = Number(guessField.value);
-
+    if(userGuess< 1  || userGuess > 100){
+        alert("Please Enter a Valid Number!")
+    }
     if (guessCount === 1) {
         guesses.textContent = "Previous Guesses: ";
     }
-
-    guesses.textContent += `${userGuess}`;
-
+    
+    guesses.textContent += `${userGuess},`;
+    
+    
     if (userGuess === randomNumber) {
         lastResult.textContent = 'Congratulations! You got it right!';
         lastResult.style.backgroundColor = 'green';
