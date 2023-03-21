@@ -45,6 +45,7 @@ form{
 .guessSubmit{
     width: 160px;
     padding: 15px 0;
+    cursor: pointer;
     margin-top: 5px;
     border-radius: 5px;
     background-color: #663399;
@@ -53,6 +54,9 @@ form{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 30px;
+}
+.guessSubmit:hover{
+    opacity: 0.9;
 }
 .guessField{
     margin-top: 5px;
@@ -67,6 +71,7 @@ form{
 }
 button {
     width: 160px;
+    cursor: pointer;
     margin: 10px 10px;
     padding: 15px 0;
     border-radius: 5px;
@@ -76,4 +81,7 @@ button {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 30px;
+}
+button:hover{
+    background-color: #aea2df;
 }
